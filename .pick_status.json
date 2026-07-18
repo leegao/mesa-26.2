@@ -1,0 +1,212 @@
+[
+    {
+        "sha": "d021138b4100bf1dc876e930645f3a382d1ed78d",
+        "description": "anv: hide Intel vendor ID for Cyberpunk",
+        "nominated": false,
+        "nomination_type": 0,
+        "resolution": 1,
+        "main_sha": null,
+        "because_sha": null,
+        "notes": null
+    },
+    {
+        "sha": "1be67a7d22c33095381206dcecda9a0c26980b26",
+        "description": "nir/opt_vectorize: handle commutative ALU sources",
+        "nominated": false,
+        "nomination_type": 0,
+        "resolution": 4,
+        "main_sha": null,
+        "because_sha": null,
+        "notes": null
+    },
+    {
+        "sha": "05f9f41fc294f6adb6d9b8ffed9a801bb232f40e",
+        "description": "nv50_ir_ra: align B96 spill slots to vec4",
+        "nominated": true,
+        "nomination_type": 2,
+        "resolution": 1,
+        "main_sha": null,
+        "because_sha": "d12e16fc3b5217613aa077f5f3418f16cf5cb824",
+        "notes": null
+    },
+    {
+        "sha": "f449a3ae575910ab6ee06d9607d2ffcdf442aae2",
+        "description": "freedreno/a6xx: Split VS driver params",
+        "nominated": false,
+        "nomination_type": 0,
+        "resolution": 4,
+        "main_sha": null,
+        "because_sha": null,
+        "notes": null
+    },
+    {
+        "sha": "df806d864a8a0f5e2961e3c8fcaea830634c674d",
+        "description": "freedreno/a6xx: Split driver UBO upload and emit",
+        "nominated": false,
+        "nomination_type": 0,
+        "resolution": 4,
+        "main_sha": null,
+        "because_sha": null,
+        "notes": null
+    },
+    {
+        "sha": "cbf6697c550584d5cc31386a19d2552ecb0d3302",
+        "description": "freedreno: Remove VS driver param patching",
+        "nominated": false,
+        "nomination_type": 0,
+        "resolution": 4,
+        "main_sha": null,
+        "because_sha": null,
+        "notes": null
+    },
+    {
+        "sha": "03bd1ff924b5474d2788e1e0406a659078fa3e80",
+        "description": "kraid/nir: Implement 64-bit integer comparisons",
+        "nominated": false,
+        "nomination_type": 0,
+        "resolution": 4,
+        "main_sha": null,
+        "because_sha": null,
+        "notes": null
+    },
+    {
+        "sha": "9a18efb87eeffe052389c25b38c214bdf975856e",
+        "description": "kraid: Add OpICmpMulti and plumb it through",
+        "nominated": false,
+        "nomination_type": 0,
+        "resolution": 4,
+        "main_sha": null,
+        "because_sha": null,
+        "notes": null
+    },
+    {
+        "sha": "48c8b0b1e5d18e56b24376944acba3931f230e7a",
+        "description": "kraid: Rework comparison folding",
+        "nominated": false,
+        "nomination_type": 0,
+        "resolution": 4,
+        "main_sha": null,
+        "because_sha": null,
+        "notes": null
+    },
+    {
+        "sha": "e906eb87cd19b9c426913170100c11fcc43070b6",
+        "description": "kraid/nir: Implement 64-bit integer down-conversions",
+        "nominated": false,
+        "nomination_type": 0,
+        "resolution": 4,
+        "main_sha": null,
+        "because_sha": null,
+        "notes": null
+    },
+    {
+        "sha": "54b8ab7e28b1bc0bad5b169df4ef94e95992d133",
+        "description": "pan/nir: Cast 64-bit comparison results to 32 bits",
+        "nominated": false,
+        "nomination_type": 0,
+        "resolution": 4,
+        "main_sha": null,
+        "because_sha": null,
+        "notes": null
+    },
+    {
+        "sha": "259470dbad8b43e55046f0dfbbd1d3fe6944ea34",
+        "description": "pan/nir: Use a single ALU op switch in lower_bool_to_bitsize",
+        "nominated": false,
+        "nomination_type": 0,
+        "resolution": 4,
+        "main_sha": null,
+        "because_sha": null,
+        "notes": null
+    },
+    {
+        "sha": "ed41cf233f1ae4aaba14d521de30345b52f23983",
+        "description": "mediafoundation: fix shadow variable in stats_buffer_manager.cpp, also remove using namespace std to avoid collision",
+        "nominated": false,
+        "nomination_type": 0,
+        "resolution": 4,
+        "main_sha": null,
+        "because_sha": null,
+        "notes": null
+    },
+    {
+        "sha": "6e786bed04314899f92e8f928fcd9874b0fbb66c",
+        "description": "mediafoundation: fix drain/flush when running ProcessDX12Context outside of m_lock, and allocator/buffer pool release.",
+        "nominated": false,
+        "nomination_type": 0,
+        "resolution": 4,
+        "main_sha": null,
+        "because_sha": null,
+        "notes": null
+    },
+    {
+        "sha": "0b3f2666029d6296cc4f9fcccbe71bbfabe4fcb7",
+        "description": "mesa: fix variable shadowing",
+        "nominated": false,
+        "nomination_type": 0,
+        "resolution": 4,
+        "main_sha": null,
+        "because_sha": null,
+        "notes": null
+    },
+    {
+        "sha": "fb7300c6da2b740b0605b1562fe569391f33be94",
+        "description": "v3dv: record the no-op fragment shader with its Vulkan stage bit",
+        "nominated": true,
+        "nomination_type": 2,
+        "resolution": 1,
+        "main_sha": null,
+        "because_sha": "02de1d9ab16f4818a9da29f96d222f19b11a106b",
+        "notes": null
+    },
+    {
+        "sha": "1d9201e377eb6f595c83d68757b054818bd4176a",
+        "description": "v3dv: record the multiview geometry shader with its Vulkan stage bit",
+        "nominated": true,
+        "nomination_type": 2,
+        "resolution": 1,
+        "main_sha": null,
+        "because_sha": "5872c7ca7ba79f5e5bf8824ee474b30fa9c12948",
+        "notes": null
+    },
+    {
+        "sha": "771dfe55fcb62b62212b418d7f702ab8d42ea07e",
+        "description": "v3dv: use the binning VS variant for the binning VPM config",
+        "nominated": true,
+        "nomination_type": 2,
+        "resolution": 1,
+        "main_sha": null,
+        "because_sha": "9e7d9a6efb6714848ea05209950e910fd7efe446",
+        "notes": null
+    },
+    {
+        "sha": "9d534e38a2e20d1076e2dbd4b82d8c9e6b65e932",
+        "description": "v3dv: make room in the descriptor map for the no-sampler entries",
+        "nominated": true,
+        "nomination_type": 2,
+        "resolution": 1,
+        "main_sha": null,
+        "because_sha": "fc17231b2b4eb2e24506db289cf89978779d9204",
+        "notes": null
+    },
+    {
+        "sha": "6895c0736ac7201889f85e1ff720f6c2fe7943ff",
+        "description": "docs: reset new_features.txt",
+        "nominated": false,
+        "nomination_type": 0,
+        "resolution": 4,
+        "main_sha": null,
+        "because_sha": null,
+        "notes": null
+    },
+    {
+        "sha": "06272731414da4e0206d9ed52ec32b0ba560c96c",
+        "description": "VERSION: bump to 26.3",
+        "nominated": false,
+        "nomination_type": 0,
+        "resolution": 4,
+        "main_sha": null,
+        "because_sha": null,
+        "notes": null
+    }
+]
