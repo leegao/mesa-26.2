@@ -1885,7 +1885,7 @@ endif
 dep_libdrm_amdgpu = null_dep
 dep_libdrm_intel = null_dep
 
-_drm_amdgpu_ver = '2.4.133'
+_drm_amdgpu_ver = '2.4.131'
 _drm_intel_ver = '2.4.75'
 _drm_ver = '2.4.109'
 
