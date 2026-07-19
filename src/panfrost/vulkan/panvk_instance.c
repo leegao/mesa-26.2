@@ -299,6 +299,7 @@ panvk_EnumerateInstanceExtensionProperties(const char *pLayerName,
                                            uint32_t *pPropertyCount,
                                            VkExtensionProperties *pProperties)
 {
+   fprintf(stderr, "panvk_EnumerateInstanceExtensionProperties\n");
    if (pLayerName)
       return panvk_error(NULL, VK_ERROR_LAYER_NOT_PRESENT);
 

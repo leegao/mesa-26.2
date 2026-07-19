@@ -79,7 +79,7 @@ jobs:
           meson setup build --reconfigure \
               --cross-file android-cross.txt \
               -Dbuildtype=${{ matrix.build-type }} \
-              -Dplatforms=android,x11 \
+              -Dplatforms=x11 \
               -Dandroid-stub=true \
               -Dandroid-libbacktrace=disabled \
               -Dplatform-sdk-version=30 \

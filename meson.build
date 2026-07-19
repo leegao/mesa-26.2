@@ -1028,7 +1028,7 @@ pre_args += '-DGLAPI_EXPORT_PROTO_ENTRY_POINTS=@0@'.format(with_glapi_export_pro
 with_android_stub = get_option('android-stub')
 need_android_stub = with_platform_android or with_gfxstream_emulated_android
 if with_android_stub and not need_android_stub
-  error('`-D android-stub=true` makes no sense without `-D platforms=android` or emulated Android')
+  warning('`-D android-stub=true` makes no sense without `-D platforms=android` or emulated Android')
 endif
 
 with_libbacktrace = get_option('android-libbacktrace') \

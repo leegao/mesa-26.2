@@ -51,6 +51,9 @@ struct pan_kmod_dev *
 pan_kmod_dev_create(int fd, uint32_t flags,
                     const struct pan_kmod_allocator *allocator)
 {
+   if (!allocator)
+         allocator = &default_allocator;
+
    drmVersionPtr version = drmGetVersion(fd);
    struct pan_kmod_dev *dev = NULL;
 

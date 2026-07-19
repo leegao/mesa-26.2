@@ -32,13 +32,15 @@ pkg_config_libdir = working_dir / 'shims'
 [built-in options]
 c_args = ['-fno-emulated-tls', '-I' + working_dir / 'shims/include',
         '-DHAVE_STRUCT_TIMESPEC', '-DHAVE_DLFCN_H', '-UHAVE_SECURE_GETENV', '-UHAVE_QSORT_S',
-        '-include', 'fcntl.h', '-include', 'time.h']
+        '-include', 'fcntl.h', '-include', 'time.h', '-Wl,-llog', '-Wl,-lsync']
 cpp_args = ['-fno-emulated-tls', '-I' + working_dir / 'shims/include',
             '-DHAVE_STRUCT_TIMESPEC', '-DHAVE_DLFCN_H', '-UHAVE_SECURE_GETENV', '-UHAVE_QSORT_S',
-            '-include', 'fcntl.h', '-include', 'time.h', '-include', 'dlfcn.h']
+            '-include', 'fcntl.h', '-include', 'time.h', '-include', 'dlfcn.h', '-Wl,-llog', '-Wl,-lsync']
 c_link_args = ['-Wl,--allow-shlib-undefined',
                 '-L' + working_dir / 'shims',
-                '-L' + ndk_home / 'toolchains/llvm/prebuilt/linux-x86_64/lib/clang/18/lib/linux/aarch64']
+                '-L' + ndk_home / 'toolchains/llvm/prebuilt/linux-x86_64/lib/clang/18/lib/linux/aarch64',
+                '-llog', '-lsync']
 cpp_link_args = ['-Wl,--allow-shlib-undefined',
                 '-L' + working_dir / 'shims',
-                '-L' + ndk_home / 'toolchains/llvm/prebuilt/linux-x86_64/lib/clang/18/lib/linux/aarch64']
+                '-L' + ndk_home / 'toolchains/llvm/prebuilt/linux-x86_64/lib/clang/18/lib/linux/aarch64',
+                '-llog', '-lsync']

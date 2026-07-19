@@ -58,24 +58,12 @@ Cflags:
 EOF
 done
 
-# for lib in libclc llvm;
-# do
-# cat <<EOF > shims/$lib.pc
-# Name: $lib
-# Description: $lib
-# Version: 1.15
-# Libs:
-# Cflags:
-# EOF
-# done
-
-
 envsubst < android.toml > /tmp/android_wrapper.toml
 
 meson setup build --reconfigure \
     --cross-file /tmp/android_wrapper.toml \
     -Dbuildtype=debugoptimized \
-    -Dplatforms=android,x11 \
+    -Dplatforms=x11 \
     -Dandroid-stub=true \
     -Dandroid-libbacktrace=disabled \
     -Dplatform-sdk-version=30 \
@@ -92,4 +80,5 @@ meson setup build --reconfigure \
     -Dzstd=disabled \
     -Dmesa-clc=system \
     -Dprecomp-compiler=system \
-    -Dvulkan-drivers=panfrost -Dllvm=disabled
+    -Dvulkan-drivers=panfrost \
+    -Dllvm=disabled

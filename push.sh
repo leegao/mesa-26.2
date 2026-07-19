@@ -10,7 +10,9 @@ push_vvl() {
 	adb shell run-as com.ludashi.benchmark "ls -lh files/imagefs/usr/share/vulkan/explicit_layer.d/$1"
 }
 
-meson compile -C build
+sh compile.sh
+
 cd build/src/panfrost/vulkan/
+# /data/user/0/com.ludashi.benchmark/files/imagefs/usr/lib/libvulkan_panfrost.so
 push libvulkan_panfrost.so
 cd -
